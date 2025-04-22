@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Página de apresentação pessoal" />
+    <meta name="author" content="Nycollas Eduardo Mota da Silva" />
+    <meta
+      name="keywords"
+      content="Nycollas Eduardo, desenvolvedor web, site pessoal, HTML e CSS, estudante de sistemas, programador iniciante, portfolio dev, contato profissional, serviços web"
+    />
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <title>Entre em contato</title>
+</head>
+<body>
+    <header class="navegacao">
+        <a class="navegacao__abas" href="index.html">Home</a>
+        <hr class="navegacao__espaco">
+        <a class="navegacao__abas" href="contato.html">Entre em contato</a>
+    </header>
+    <main>
+        <form class="elementos__formulario">
+            <label class="elementos__formulario__texto" for="campo_nome">Digite seu nome:</label>
+            <input type="text" name="nome" id="campo_nome" required> 
+
+            <label class="elementos__formulario__texto" for="campo_email">Digite seu e-mail:</label>
+            <input type="text" name="email" id="campo_email" required> 
+
+            <label class="elementos__formulario__texto" for="campo_celular">Digite seu número de celular:</label>
+            <input type="text" name="celular" id="campo_celular" required>
+
+            <label class="elementos__formulario__texto" for="campo_assunto">Como soube de mim?</label>
+            <select name="assunto">
+                <option value="" disabled selected>Selecione uma opção:</option>
+                <option value="indicacao">Indicação</option>
+                <option value="github">GitHub</option>
+                <option value="instagram">Instagram</option>
+                <option value="linkedin">LinkedIn</option>
+            </select>
+
+            <button class="elementos__formulario__botao" type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer class="rodape">
+        <p class="rodape__texto">Feito com muito carinho por Nycollas Eduardo.</p>
+    </footer>
+</body>
+</html>
