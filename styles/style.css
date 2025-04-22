@@ -5,10 +5,10 @@
 :root {
     --fonte-titulo: "Poppins", sans-serif;
     --fonte-titulo-peso: 900;
-    --fonte-titulo-tamanho: 30px;
+    --fonte-titulo-tamanho: 1.9rem;
     --fonte-textos: "Open Sans", sans-serif;
     --fonte-textos-peso: 600;
-    --fonte-textos-tamanho: 20px;
+    --fonte-textos-tamanho: 1.25rem;
     --cor-fundo-rodape: #0F0E0E;
     --cor-titulo-bordas: #8B9A46;
     --cor-texto: #EEEEEE;
@@ -21,7 +21,7 @@
 }
 
 body {
-	height: 100vh;
+    height: 100vh;
 	box-sizing: border-box;
     background-color: var(--cor-fundo-rodape);
 }
@@ -65,8 +65,8 @@ body {
 .elementos__textos {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    width: 600px;
+    gap: 1.5rem;
+    width: 50%;
 }
 
 .elementos__textos__titulo {
@@ -101,15 +101,15 @@ body {
 }
 
 .elementos__logo__link:hover {
-    border: 2px solid var(--cor-texto);
+    border: 0.1rem solid var(--cor-texto);
     border-radius: 20%;
     padding: 1.5%;
     background-color: var(--cor-hover);
 }
 
 img {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
 }
 
 .elementos__formulario {
@@ -118,7 +118,7 @@ img {
     justify-content: center;
     align-items: center;
     margin: 10%;
-    gap: 25px;
+    gap: 1.55rem;
 }
 
 .elementos__formulario__texto {
@@ -129,9 +129,9 @@ img {
 }
 
 .elementos__formulario__botao {
-    width: 250px;
-    height: 50px;
-    border: 4px solid var(--cor-texto);
+    width: 15.5rem;
+    height: 3.1rem;
+    border: 0.25rem solid var(--cor-texto);
     background-color: var(--cor-hover);
     font-family: var(--titulo);
     font-weight: var(--fonte-titulo-peso);
@@ -140,19 +140,40 @@ img {
 }
 
 .rodape {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    border: 2px solid var(--cor-titulo-bordas);
+    border: 0.1rem solid var(--cor-titulo-bordas);
     background-color: var(--cor-titulo-bordas);
-    height: 75px;
+    height: 72px;
 }
 
 .rodape__texto {
     display: flex;
-    padding-bottom: 1%;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0.75%;
     font-family: var(--titulo);
     font-weight: var(--fonte-titulo-peso);
     font-size: var(--fonte-titulo-tamanho);
     color: var(--cor-fundo-rodape);
+}
+
+@media (max-width: 1300px) {
+    .navegacao {
+        padding-bottom: 5%;
+        justify-content: center;
+    }
+
+    .elementos {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .elementos__textos {
+        padding-bottom: 10%;
+    }
+}
+
+@media (max-width: 800px) {
+    .rodape {
+        height: 90px;
+    }
 }
