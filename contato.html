@@ -10,7 +10,7 @@
       name="keywords"
       content="Nycollas Eduardo, desenvolvedor web, site pessoal, HTML e CSS, estudante de sistemas, programador iniciante, portfolio dev, contato profissional, serviços web"
     />
-    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="/style.css"/>
     <title>Entre em contato</title>
 </head>
 <body>
@@ -20,30 +20,22 @@
         <a class="navegacao__abas" href="contato.html">Entre em contato</a>
     </header>
     <main>
-        <form class="elementos__formulario">
-            <label class="elementos__formulario__texto" for="campo_nome">Digite seu nome:</label>
-            <input type="text" name="nome" id="campo_nome" required> 
-
-            <label class="elementos__formulario__texto" for="campo_email">Digite seu e-mail:</label>
-            <input type="text" name="email" id="campo_email" required> 
-
-            <label class="elementos__formulario__texto" for="campo_celular">Digite seu número de celular:</label>
-            <input type="text" name="celular" id="campo_celular" required>
-
-            <label class="elementos__formulario__texto" for="campo_assunto">Como soube de mim?</label>
-            <select name="assunto">
-                <option value="" disabled selected>Selecione uma opção:</option>
+        <section class="elementos__formulario"> 
+            <input type="text" placeholder="Digite seu nome" class="elementos__formulario__campo"> 
+            <input type="email" placeholder="Digite seu e-mail" class="elementos__formulario__campo"> 
+            <input type="number" placeholder="Digite seu número de celular" class="elementos__formulario__campo">
+            <select class="elementos__formulario__campo">
+                <option value="" disabled selected>Como soube de mim?</option>
                 <option value="indicacao">Indicação</option>
                 <option value="github">GitHub</option>
                 <option value="instagram">Instagram</option>
                 <option value="linkedin">LinkedIn</option>
             </select>
-
-            <button class="elementos__formulario__botao" type="submit">Enviar</button>
-        </form>
+            <input class="elementos__formulario__botao" type="submit" value="Enviar">
+        </section>
     </main>
     <footer class="rodape">
-        <p class="rodape__texto">Feito com muito carinho por Nycollas Eduardo.</p>
+        <p class="rodape__texto">Feito com carinho por Nycollas Eduardo.</p>
     </footer>
 </body>
 </html>
